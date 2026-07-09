@@ -1,0 +1,19 @@
+# Root: shared Python tooling config applied across domain/, backend/, services/.
+# Each package has its own Poetry pyproject; this file only carries lint/format
+# settings so quality checks are consistent repo-wide.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "migrations", "__pycache__"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+# B008: Depends() in defaults is the required FastAPI idiom, not a defect.
+# UP042: `str, Enum` is an intentional, portable idiom for the Role value object.
+ignore = ["E501", "B008", "UP042"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+extend-exclude = "migrations"

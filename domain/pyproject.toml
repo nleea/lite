@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "domain"
+version = "0.1.0"
+description = "Business entities and rules (Clean Architecture domain layer)"
+authors = ["Lite Thinking Candidate <dev@example.com>"]
+readme = "README.md"
+packages = [{ include = "domain", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+pytest-cov = "^7.1.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

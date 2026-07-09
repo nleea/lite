@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Coverage / SonarQube
+coverage.xml
+.coverage
+.scannerwork/
+frontend/coverage/
+
+# Env / secrets
+.env
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# Django
+*.sqlite3

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "Django backend: application + infrastructure layer"
+authors = ["Lite Thinking Candidate <dev@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0"
+djangorestframework = "^3.15"
+djangorestframework-simplejwt = "^5.3"
+argon2-cffi = "^23.1"
+psycopg = { extras = ["binary"], version = "^3.1" }
+redis = "^5.0"
+django-cors-headers = "^4.3"
+domain = { path = "../domain", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

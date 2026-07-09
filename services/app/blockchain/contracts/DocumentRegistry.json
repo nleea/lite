@@ -1,0 +1,76 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "Anchored",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "anchor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "anchoredAt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561000f575f80fd5b506101538061001d5f395ff3fe608060405234801561000f575f80fd5b506004361061003f575f3560e01c806375e36616146100435780639591a61014610074578063eecdf92714610093575b5f80fd5b610062610051366004610106565b5f9081526020819052604090205490565b60405190815260200160405180910390f35b610062610082366004610106565b5f6020819052908152604090205481565b6100a66100a1366004610106565b6100a8565b005b5f818152602081905260408120549003610103575f81815260208181526040918290204290819055915191825282917ffde54488b5523b3abf19b99976dd0e2c531fbcd233d0eb682c96c3a18cf6b3c1910160405180910390a25b50565b5f60208284031215610116575f80fd5b503591905056fea264697066735822122050e48b635b56ae1d1e04f2dfec5dde1b4a857e3640f6bfb9d09e9df1183ed0b564736f6c63430008180033",
+  "compiler": "0.8.24+commit.e11b9ed9.Linux.g++"
+}
