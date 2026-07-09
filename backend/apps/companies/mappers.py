@@ -19,3 +19,4 @@ def to_domain(company: Company) -> DomainCompany:
 def validate_with_domain(nit: str, name: str, address: str, phone: str) -> DomainCompany:
     """Run domain invariants before persisting. Raises domain ValidationError."""
     return DomainCompany.create(nit=nit, name=name, address=address, phone=phone)
+

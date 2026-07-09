@@ -41,5 +41,5 @@ docker compose up --build
 
 Usuarios:
 
-admin@acme.com - Admin12345
-externo@demo.com - supersecre1
+admin@acme.com - admin12345
+externo@demo.com - externo12345
